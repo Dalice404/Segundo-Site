@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>DALICE404</title>
+	<link rel="icon" href="imagens/favicon.png">
+</head>
+<body>
+	<div class="content">
+		<nav>
+   			<ul>
+        		<li><a href="index.html" class="Menue">DALICE</a></li>
+        		<li><a href="analise.html" class="Menu">Autópsia Literária</a></li>
+        		<li><a href="ruidos.html" class="Menu">Ruídos Internos</a></li>
+        		<li><a href="inicio.html" class="Menu">Obituário de Inícios</a></li>
+        		<li><a href="testamento.html" class="Menu">Testamento Literário</a></li>
+        		<li><a href="cadastro.html" class="Menu active">Cadastro Fantasma</a></li>
+    		</ul>
+		</nav>
+	<br><br>
+		<h1>Cadastro de "a vida de deu uma rasteira?"</h1>
+		<h4 align="center">Relaxa, a vida faz isso com todos.<del>Com os adultos, pelo menos.</del></h4>
+	</center>
+
+	<form>
+	<fieldset>
+		<legend><b>Bora cadastrar tua alma vazia?</b></legend>
+			<label for="nome">Nome</label>
+			<br>
+			<input type="text" size="40" maxlength="10" minlength="3" required id="nome" name="nome" placeholder="Digite seu nome">
+
+			<br><br>
+
+			<label for="nome">Idade</label>
+			<br>
+			<input type="number" name="Idade" id="Idade" min="18" max="60" step="1" placeholder="Velho?">
+
+			<br><br>
+
+			<label for="dtNasc">Data de nascimento</label>
+			<br>
+			<input type="date" id="dtNasc" name="dtNasc">
+
+			<br><br>
+
+			<label for="sexo">Sexo</label>
+			<br>
+			F<input type="radio" id="sexo" name="sexo" value="F" checked>
+			M<input type="radio" id="sexo" name="sexo" value="M">
+
+			<br><br>
+
+			<label for="foto">Foto (PNG ou JPG)</label>
+			<br>
+			<input type="file" id="foto" name="foto" accept=".png, .jpg">
+
+			<br><br>
+
+
+			<label for="login">Login</label>
+			<br>
+
+			<input type="text" id="login" name="login" maxlength="10" placeholder="Meio besta">
+
+			<br><br>
+			
+			<label for="senha">Senha</label>
+			<br>
+			<input type="password" id="senha" name="senha" maxlength="10" placeholder="333">
+	
+	</fieldset>
+	<fieldset>
+		<legend><b>Dados da Vida Adulta</b></legend>
+
+			<label for="cor">Quanto se sente preparado(a) para a vida?:</label>
+			<br>
+				0<input type="range" name="nota" id="nota" min="0" max="100" value="80">100
+			<br><br>
+			<label for="adulto">Que tipo de adulto você é:</label>
+			<br>
+				<select name="adulto" id="curso">
+					<option value="Desesperancoso">Desesperançoso(a)</option>
+					<option value="Esperancoso">Esperançoso</option>
+					<option value="Depressivo">Depressivo</option>
+					<option value="Realista">Realista</option>
+					<option value="Sonhador">Sonhador</option>
+					<option value="Tenho que ser adulto" selected>Tenho que ser adulto?</option>
+				</select>
+				<br><br>
+
+			<label for="quer">Que adulto quer ser?</label>
+				<br>
+				<select name="quer" id="quer" size="6" multiple>
+					<option value="Ambicioso">Ambicioso</option>
+					<option value="Louco">Louco</option>
+					<option value="Rico">Rico</option>
+					<option value="Calmo">Calmo</option>
+					<option value="Trabalhador">Trabalhador</option>
+					<option value="Não quero ser adulto">Não quero ser adulto!</option>
+				</select>
+				<br>
+				<small>(ctrl+click p/ múltipla seleção)</small>
+				<br><br>
+			<label for="formacao">É formado em que?</label>
+			<br>
+				<select name="formacao" id="formacao">
+					<optgroup label="formacao">
+						<option value="Na preguica">Na preguiça</option>
+						<option value="No humor">No humor</option>
+						<option value="Na rua">Na rua</option>
+						<option value="Na vida">Na vida</option>
+						<option value="No jeitinho brasileiro">No jeitinho brasileiro</option>
+					</optgroup>
+					<optgroup label="OU não">
+						<option value="Aprendendo" selected>Ainda aprendendo a viver</option>
+					</optgroup>
+
+				</select>
+			<br><br>
+			<label for="conhecimento">Conhecimento:</label>
+				<br>
+				<input type="text" id="conhecimento" name="conhecimento" list="lista-conhecimento">
+
+					<datalist id="lista-conhecimento">
+						<option value="Um pouco de tudo">Um pouco de tudo</option>
+						<option value="Nada de nada">Nada de nada</option>
+						<option value="Me viro com o pouco que sei">Me viro com o pouco que sei</option>
+						<option value="Conhecimentos profundos em temas estranhos">Conhecimentos profundos em temas estranhos</option>
+						<option value="Trabalhador">Trabalhador</option>
+						<option value="Ainda estou aprendendo a viver">Ainda estou aprendendo a viver</option>
+				</datalist>
+
+	</fieldset>
+
+	<fieldset>
+		<legend><b>Formas de contato:</b></legend>
+			<label for="msg">Mensagem:</label>
+			<br>
+			<textarea id="msg" name="msg" rows="10" cols="50" minlength="20" maxlength="100" placeholder="Digite uma mensagem que tenha de 20 a 100 caracteres" spelicheck="true"></textarea>
+			<br><br>
+
+			<label for="email">e-Mail:</label>
+			<br>
+				<input type="email" id="email" name="email">
+			<br><br>
+			
+			<label for="site">Site:</label>
+			<br>
+				<input type="url" id="site" name="site">
+			<br><br>
+			
+	</fieldset>
+	<br><br>
+	<input type="submit" name="btn1" value="Cadastrar">
+	<input type="reset" name="btn2" value="Limpar">
+	<input type="button" name="btn3" value="Não clique!" id="nao-clique" onclick="alert ('E depois reclama da vida, mas tu também não colabora. Naõ sabe ler? FALEI PARA NÃO CLICAR!');">
+	</form>
+
+</body>
+</html>
+    	</div>
